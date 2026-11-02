@@ -1,0 +1,867 @@
+{
+  "generated_at": "2026-10-31T21:31:26",
+  "scenes": [
+    {
+      "id": "DEMO_A",
+      "slug": "scene1",
+      "label": "场景一",
+      "title": "复杂场景 · 自动增强",
+      "short": "质量门控触发 → 参数扫描 → TTA → 报告",
+      "run_id": "20261025_112324_788f28_DEMO_A",
+      "status": "done",
+      "route_history": [
+        "investigation",
+        "enhancement",
+        "enhancement",
+        "finish"
+      ],
+      "reasons": [
+        "fragmented_findings",
+        "many_tiny_findings"
+      ],
+      "recommended_actions": [
+        "parameter_sweep",
+        "tta_reinfer"
+      ],
+      "actions": [
+        "diagnose:sweep",
+        "parameter_sweep",
+        "tta_reinfer",
+        "explain",
+        "diagnose:explain"
+      ],
+      "reviewed": false,
+      "review": null,
+      "resume_code": "",
+      "metrics": {
+        "findings": 9,
+        "area_m2": 799.01,
+        "confidence": 0.9359,
+        "level": "high",
+        "gate": "未通过",
+        "actions": 5,
+        "reviewed": false
+      },
+      "findings": [
+        {
+          "area_m2": 134.63,
+          "area_px": 13463,
+          "mean_prob": 0.661,
+          "max_prob": 0.8626,
+          "low_conf_pixel_ratio": 0.4344,
+          "confidence_level": "medium",
+          "centroid": [
+            198.581,
+            -118.129
+          ],
+          "bbox": [
+            191.8,
+            -126.3,
+            204.8,
+            -110.0
+          ],
+          "pixel_bbox": [
+            1918,
+            1100,
+            130,
+            163
+          ],
+          "flags": [
+            "low_confidence",
+            "ambiguous_boundary"
+          ],
+          "review_status": "pending",
+          "id": "F0001",
+          "rank": 1
+        },
+        {
+          "area_m2": 128.59,
+          "area_px": 12859,
+          "mean_prob": 0.9094,
+          "max_prob": 0.9806,
+          "low_conf_pixel_ratio": 0.038,
+          "confidence_level": "high",
+          "centroid": [
+            7.952,
+            -138.282
+          ],
+          "bbox": [
+            0.5,
+            -146.7,
+            15.5,
+            -129.9
+          ],
+          "pixel_bbox": [
+            5,
+            1299,
+            150,
+            168
+          ],
+          "flags": [],
+          "review_status": "pending",
+          "id": "F0002",
+          "rank": 2
+        },
+        {
+          "area_m2": 125.64,
+          "area_px": 12564,
+          "mean_prob": 0.921,
+          "max_prob": 0.9892,
+          "low_conf_pixel_ratio": 0.0435,
+          "confidence_level": "high",
+          "centroid": [
+            198.78,
+            -156.507
+          ],
+          "bbox": [
+            192.2,
+            -162.4,
+            204.8,
+            -150.6
+          ],
+          "pixel_bbox": [
+            1922,
+            1506,
+            126,
+            118
+          ],
+          "flags": [],
+          "review_status": "pending",
+          "id": "F0003",
+          "rank": 3
+        },
+        {
+          "area_m2": 105.39,
+          "area_px": 10539,
+          "mean_prob": 0.7692,
+          "max_prob": 0.9688,
+          "low_conf_pixel_ratio": 0.2457,
+          "confidence_level": "medium",
+          "centroid": [
+            128.819,
+            -192.628
+          ],
+          "bbox": [
+            122.3,
+            -198.8,
+            135.7,
+            -185.8
+          ],
+          "pixel_bbox": [
+            1223,
+            1858,
+            134,
+            130
+          ],
+          "flags": [],
+          "review_status": "pending",
+          "id": "F0004",
+          "rank": 4
+        },
+        {
+          "area_m2": 103.2,
+          "area_px": 10320,
+          "mean_prob": 0.9177,
+          "max_prob": 0.993,
+          "low_conf_pixel_ratio": 0.0411,
+          "confidence_level": "high",
+          "centroid": [
+            201.146,
+            -18.801
+          ],
+          "bbox": [
+            196.3,
+            -26.7,
+            204.8,
+            -11.6
+          ],
+          "pixel_bbox": [
+            1963,
+            116,
+            85,
+            151
+          ],
+          "flags": [],
+          "review_status": "pending",
+          "id": "F0005",
+          "rank": 5
+        },
+        {
+          "area_m2": 83.66,
+          "area_px": 8366,
+          "mean_prob": 0.8738,
+          "max_prob": 0.9572,
+          "low_conf_pixel_ratio": 0.0534,
+          "confidence_level": "high",
+          "centroid": [
+            68.708,
+            -166.951
+          ],
+          "bbox": [
+            65.9,
+            -175.4,
+            71.6,
+            -158.2
+          ],
+          "pixel_bbox": [
+            659,
+            1582,
+            57,
+            172
+          ],
+          "flags": [],
+          "review_status": "pending",
+          "id": "F0006",
+          "rank": 6
+        },
+        {
+          "area_m2": 48.87,
+          "area_px": 4887,
+          "mean_prob": 0.7556,
+          "max_prob": 0.8868,
+          "low_conf_pixel_ratio": 0.117,
+          "confidence_level": "medium",
+          "centroid": [
+            62.296,
+            -120.528
+          ],
+          "bbox": [
+            60.0,
+            -126.5,
+            64.6,
+            -114.3
+          ],
+          "pixel_bbox": [
+            600,
+            1143,
+            46,
+            122
+          ],
+          "flags": [],
+          "review_status": "pending",
+          "id": "F0007",
+          "rank": 7
+        },
+        {
+          "area_m2": 41.3,
+          "area_px": 4130,
+          "mean_prob": 0.7974,
+          "max_prob": 0.9148,
+          "low_conf_pixel_ratio": 0.1,
+          "confidence_level": "medium",
+          "centroid": [
+            27.183,
+            -165.155
+          ],
+          "bbox": [
+            23.1,
+            -170.4,
+            30.6,
+            -160.0
+          ],
+          "pixel_bbox": [
+            231,
+            1600,
+            75,
+            104
+          ],
+          "flags": [],
+          "review_status": "pending",
+          "id": "F0008",
+          "rank": 8
+        },
+        {
+          "area_m2": 27.73,
+          "area_px": 2773,
+          "mean_prob": 0.8444,
+          "max_prob": 0.9317,
+          "low_conf_pixel_ratio": 0.0934,
+          "confidence_level": "high",
+          "centroid": [
+            93.562,
+            -106.541
+          ],
+          "bbox": [
+            91.3,
+            -109.7,
+            96.0,
+            -102.8
+          ],
+          "pixel_bbox": [
+            913,
+            1028,
+            47,
+            69
+          ],
+          "flags": [
+            "small_object"
+          ],
+          "review_status": "pending",
+          "id": "F0009",
+          "rank": 9
+        }
+      ],
+      "images": {
+        "t1": "assets/scene1/t1.jpg",
+        "t2": "assets/scene1/t2.jpg",
+        "prob": "assets/scene1/prob.png",
+        "prob_overlay": "assets/scene1/prob_overlay.jpg",
+        "mask": "assets/scene1/mask.png",
+        "mask_overlay": "assets/scene1/mask_overlay.jpg",
+        "overview": "assets/scene1/overview.png",
+        "crops": [
+          "assets/scene1/crops/01_F0001.png",
+          "assets/scene1/crops/02_F0002.png",
+          "assets/scene1/crops/03_F0003.png",
+          "assets/scene1/crops/04_F0004.png",
+          "assets/scene1/crops/05_F0005.png"
+        ]
+      },
+      "audit": [
+        {
+          "node": "supervisor",
+          "ts": "2026-10-25T11:23:24",
+          "detail": "{\"route\": \"investigation\", \"reason\": \"尚未完成调查，进入调查子图\", \"router\": \"rules\", \"rounds\": 0}"
+        },
+        {
+          "node": "plan",
+          "ts": "2026-10-25T11:23:24",
+          "detail": "{\"query\": \"分析演示区A 2023年Q2的影像，找出新增建筑\", \"scene_id\": \"DEMO_A\", \"period\": \"2023-05-20\", \"reason\": \"exact scene_id\", \"params\": {\"threshold\": 0.5, \"min_area_px\": 2000, \"morph_kernel\": 3, \"tile_size\": 512, \"overlap\": 64, \"batch_size\": 1, \"tta\": false, \"tta_flips\": \"hv\"}}"
+        },
+        {
+          "node": "prepare",
+          "ts": "2026-10-25T11:23:24",
+          "detail": "{\"checks\": [\"T1=2048x2048, 3 bands, CRS=EPSG:32650\", \"T2=2048x2048, 3 bands, CRS=EPSG:32650\", \"grid_equal=True\"], \"warnings\": []}"
+        },
+        {
+          "node": "infer",
+          "ts": "2026-10-25T11:23:32",
+          "detail": "{\"backend\": \"bit\", \"model_version\": \"best_ckpt.pt:63777789:1691640682\", \"runtime_s\": 7.494, \"stats\": {\"pixels\": 4194304, \"changed_pixels\": 82618, \"coverage\": 0.019698, \"pixel_confidence\": 0.9915, \"changed_pixel_confidence\": 0.8343, \"ambiguous_ratio\": 0.0044, \"mean_entropy\": 0.0414, \"prob_p50\": 0.0009, \"prob_p90\": 0.0077, \"prob_p99\": 0.8803}, \"params\": {\"threshold\": 0.5, \"min_area_px\": 2000, \"morph_kernel\": 3, \"tile_size\": 512, \"overlap\": 64, \"batch_size\": 1, \"tta\": false, \"tta_flips\": \"hv\"}}"
+        },
+        {
+          "node": "postprocess",
+          "ts": "2026-10-25T11:23:32",
+          "detail": "{\"count\": 9, \"total_area_m2\": 808.24, \"mask_stats\": {\"raw_components\": 12, \"kept_components\": 9, \"threshold\": 0.5, \"min_area_px\": 2000, \"morph_kernel\": 3, \"mask_pixels\": 80824}}"
+        },
+        {
+          "node": "assess",
+          "ts": "2026-10-25T11:23:32",
+          "detail": "{\"overall\": 0.9115, \"level\": \"high\", \"reasons\": [\"fragmented_findings\", \"many_tiny_findings\"], \"recommended_actions\": [\"parameter_sweep\", \"tta_reinfer\"]}"
+        },
+        {
+          "node": "supervisor",
+          "ts": "2026-10-25T11:23:32",
+          "detail": "{\"route\": \"enhancement\", \"reason\": \"质量门控未通过: fragmented_findings, many_tiny_findings (round 1/2)\", \"router\": \"rules\", \"rounds\": 1}"
+        },
+        {
+          "node": "enhance.diagnose",
+          "ts": "2026-10-25T11:23:32",
+          "detail": "{\"reasons\": [\"fragmented_findings\", \"many_tiny_findings\"], \"action\": \"sweep\", \"why\": \"碎斑/面积异常，先做后处理参数扫描\", \"round\": 1, \"review_possible\": false, \"reinfer_possible\": true, \"sweep_possible\": true}"
+        },
+        {
+          "node": "enhance.sweep",
+          "ts": "2026-10-25T11:23:34",
+          "detail": "{\"improved\": false, \"skipped\": null, \"reason\": null, \"baseline_score\": 0.8397, \"best_score\": 0.8397, \"best_params\": {\"threshold\": 0.5, \"min_area_px\": 2000, \"morph_kernel\": 3, \"tile_size\": 512, \"overlap\": 64, \"batch_size\": 1, \"tta\": false, \"tta_flips\": \"hv\"}, \"best_stats\": {\"count\": 9, \"coverage\": 0.01927, \"mean_prob\": 0.8387, \"median_area_m2\": 103.25, \"stability\": 1.0, \"plausible\": 0.6}}"
+        },
+        {
+          "node": "enhance.reassess",
+          "ts": "2026-10-25T11:23:34",
+          "detail": "{\"overall\": 0.9115, \"level\": \"high\", \"reasons\": [\"fragmented_findings\", \"many_tiny_findings\"]}"
+        },
+        {
+          "node": "enhance.reinfer",
+          "ts": "2026-10-25T11:23:39",
+          "detail": "{\"runtime_s\": 5.152, \"stability\": 0.9935, \"stats\": {\"pixels\": 4194304, \"changed_pixels\": 81815, \"coverage\": 0.019506, \"pixel_confidence\": 0.9912, \"changed_pixel_confidence\": 0.8276, \"ambiguous_ratio\": 0.005, \"mean_entropy\": 0.0429, \"prob_p50\": 0.001, \"prob_p90\": 0.0081, \"prob_p99\": 0.8799}, \"count\": 9}"
+        },
+        {
+          "node": "enhance.reassess",
+          "ts": "2026-10-25T11:23:39",
+          "detail": "{\"overall\": 0.9359, \"level\": \"high\", \"reasons\": [\"fragmented_findings\", \"many_tiny_findings\"]}"
+        },
+        {
+          "node": "enhance.explain",
+          "ts": "2026-10-25T11:23:42",
+          "detail": "{\"report\": \"demo/outputs/case_a/20261025_112324_788f28_DEMO_A/report.md\"}"
+        },
+        {
+          "node": "supervisor",
+          "ts": "2026-10-25T11:23:42",
+          "detail": "{\"route\": \"enhancement\", \"reason\": \"质量门控未通过: fragmented_findings, many_tiny_findings (round 2/2)\", \"router\": \"rules\", \"rounds\": 2}"
+        },
+        {
+          "node": "enhance.diagnose",
+          "ts": "2026-10-25T11:23:42",
+          "detail": "{\"reasons\": [\"fragmented_findings\", \"many_tiny_findings\"], \"action\": \"explain\", \"why\": \"已无可用自动增强手段，生成解释性报告\", \"round\": 2, \"review_possible\": false, \"reinfer_possible\": false, \"sweep_possible\": false}"
+        },
+        {
+          "node": "enhance.explain",
+          "ts": "2026-10-25T11:23:44",
+          "detail": "{\"report\": \"demo/outputs/case_a/20261025_112324_788f28_DEMO_A/report.md\"}"
+        },
+        {
+          "node": "supervisor",
+          "ts": "2026-10-25T11:23:44",
+          "detail": "{\"route\": \"finish\", \"reason\": \"已达到增强轮次上限，输出带保留意见的结果\", \"router\": \"rules\", \"rounds\": 2}"
+        }
+      ],
+      "inference": {
+        "backend": "bit",
+        "model_version": "best_ckpt.pt:63777789:1691640682",
+        "runtime_s": 5.152,
+        "stability": 0.9935,
+        "stats": {
+          "pixels": 4194304,
+          "changed_pixels": 81815,
+          "coverage": 0.019506,
+          "pixel_confidence": 0.9912,
+          "changed_pixel_confidence": 0.8276,
+          "ambiguous_ratio": 0.005,
+          "mean_entropy": 0.0429,
+          "prob_p50": 0.001,
+          "prob_p90": 0.0081,
+          "prob_p99": 0.8799
+        }
+      },
+      "report_html": "<h1>“两违”影像变化检测报告</h1>\n<ul>\n<li>生成时间：2026-10-25T11:23:46</li>\n<li>任务：分析演示区A 2023年Q2的影像，找出新增建筑</li>\n<li>场景：演示区 A 新增建筑案例</li>\n<li>周期：2023-05-20</li>\n<li>模型：bit / best_ckpt.pt:63777789:1691640682</li>\n<li>状态：done</li>\n</ul>\n<h2>1. 结论摘要</h2>\n<p>本次分析共提取 <strong>9</strong> 个疑似新增/变化图斑，总面积 <strong>799.01 m²</strong>，整体置信度 <strong>0.936（high）</strong>。</p>\n<p>质量门控触发：<code>fragmented_findings</code>、<code>many_tiny_findings</code>。</p>\n<p>已执行的增强动作：<code>diagnose:sweep</code>、<code>parameter_sweep</code>、<code>tta_reinfer</code>、<code>explain</code>、<code>diagnose:explain</code></p>\n<h2>2. 置信度与质量</h2>\n<table>\n<thead>\n<tr>\n<th>指标</th>\n<th>值</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>总体置信度</td>\n<td>0.936</td>\n</tr>\n<tr>\n<td>像素级置信度</td>\n<td>0.991</td>\n</tr>\n<tr>\n<td>图斑级置信度</td>\n<td>0.831</td>\n</tr>\n<tr>\n<td>模糊像素占比</td>\n<td>0.005</td>\n</tr>\n<tr>\n<td>变化面积占比</td>\n<td>0.0195</td>\n</tr>\n<tr>\n<td>模型稳定性(TTA)</td>\n<td>0.994</td>\n</tr>\n</tbody>\n</table>\n<h2>3. 疑似图斑（按面积排序，Top 20）</h2>\n<table>\n<thead>\n<tr>\n<th>ID</th>\n<th style=\"text-align: right;\">面积(m²)</th>\n<th style=\"text-align: right;\">平均概率</th>\n<th>置信等级</th>\n<th>中心点</th>\n<th>标记</th>\n<th>复核状态</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>F0001</td>\n<td style=\"text-align: right;\">134.63</td>\n<td style=\"text-align: right;\">0.661</td>\n<td>medium</td>\n<td>198.6, -118.1</td>\n<td>low_confidence, ambiguous_boundary</td>\n<td>pending</td>\n</tr>\n<tr>\n<td>F0002</td>\n<td style=\"text-align: right;\">128.59</td>\n<td style=\"text-align: right;\">0.909</td>\n<td>high</td>\n<td>8.0, -138.3</td>\n<td>-</td>\n<td>pending</td>\n</tr>\n<tr>\n<td>F0003</td>\n<td style=\"text-align: right;\">125.64</td>\n<td style=\"text-align: right;\">0.921</td>\n<td>high</td>\n<td>198.8, -156.5</td>\n<td>-</td>\n<td>pending</td>\n</tr>\n<tr>\n<td>F0004</td>\n<td style=\"text-align: right;\">105.39</td>\n<td style=\"text-align: right;\">0.769</td>\n<td>medium</td>\n<td>128.8, -192.6</td>\n<td>-</td>\n<td>pending</td>\n</tr>\n<tr>\n<td>F0005</td>\n<td style=\"text-align: right;\">103.20</td>\n<td style=\"text-align: right;\">0.918</td>\n<td>high</td>\n<td>201.1, -18.8</td>\n<td>-</td>\n<td>pending</td>\n</tr>\n<tr>\n<td>F0006</td>\n<td style=\"text-align: right;\">83.66</td>\n<td style=\"text-align: right;\">0.874</td>\n<td>high</td>\n<td>68.7, -167.0</td>\n<td>-</td>\n<td>pending</td>\n</tr>\n<tr>\n<td>F0007</td>\n<td style=\"text-align: right;\">48.87</td>\n<td style=\"text-align: right;\">0.756</td>\n<td>medium</td>\n<td>62.3, -120.5</td>\n<td>-</td>\n<td>pending</td>\n</tr>\n<tr>\n<td>F0008</td>\n<td style=\"text-align: right;\">41.30</td>\n<td style=\"text-align: right;\">0.797</td>\n<td>medium</td>\n<td>27.2, -165.2</td>\n<td>-</td>\n<td>pending</td>\n</tr>\n<tr>\n<td>F0009</td>\n<td style=\"text-align: right;\">27.73</td>\n<td style=\"text-align: right;\">0.844</td>\n<td>high</td>\n<td>93.6, -106.5</td>\n<td>small_object</td>\n<td>pending</td>\n</tr>\n</tbody>\n</table>\n<h2>4. 增强与人工复核记录</h2>\n<ul>\n<li>诊断: 碎斑/面积异常，先做后处理参数扫描；原因=['fragmented_findings', 'many_tiny_findings']</li>\n<li>参数扫描未找到更优组合 (best=0.8397, baseline=0.8397)</li>\n<li>TTA 重新推理: 图斑 9 个，模型稳定性 0.9935，置信度 0.9115 → 待重评</li>\n<li>解释性报告已生成: （演示产物）</li>\n<li>诊断: 已无可用自动增强手段，生成解释性报告；原因=['fragmented_findings', 'many_tiny_findings']</li>\n<li>解释性报告已生成: （演示产物）</li>\n</ul>\n<h2>5. 产物</h2>\n<ul>\n<li>prob_tif: <code>（演示产物）</code></li>\n<li>mask_tif: <code>（演示产物）</code></li>\n<li>findings_geojson: <code>（演示产物）</code></li>\n<li>findings_csv: <code>（演示产物）</code></li>\n<li>findings_json: <code>（演示产物）</code></li>\n<li>overview: <code>（演示产物）</code></li>\n<li>crop: <code>（演示产物）</code></li>\n<li>crop: <code>（演示产物）</code></li>\n<li>crop: <code>（演示产物）</code></li>\n<li>crop: <code>（演示产物）</code></li>\n<li>crop: <code>（演示产物）</code></li>\n</ul>\n<h2>6. 方法与限制</h2>\n<p>本报告由变化检测模型 + 质量门控自动生成。模型输出为<strong>疑似变化图斑</strong>，不构成违法认定或执法依据；应结合审批数据、用地红线、历史影像和实地核查复核。</p>\n<p>主要误差来源：季节性/光照差异、配准误差、阴影与道路改造、影像分辨率、训练区域与目标区域的地物分布差异。低置信图斑建议优先人工复核。</p>",
+      "assets": {
+        "report_md": "assets/scene1/report.md",
+        "report_html": "assets/scene1/report.html",
+        "findings_csv": "assets/scene1/findings.csv",
+        "findings_geojson": "assets/scene1/findings.geojson",
+        "final_answer": "assets/scene1/final_answer.md"
+      }
+    },
+    {
+      "id": "DEMO_B",
+      "slug": "scene2",
+      "label": "场景二",
+      "title": "低置信 · 人工复核",
+      "short": "TTA 后仍不确定 → interrupt → 人工 approve → 报告",
+      "run_id": "20261025_112515_535923_DEMO_B",
+      "status": "done",
+      "route_history": [
+        "investigation",
+        "enhancement",
+        "finish"
+      ],
+      "reasons": [
+        "fragmented_findings",
+        "many_tiny_findings",
+        "low_confidence_objects"
+      ],
+      "recommended_actions": [
+        "parameter_sweep",
+        "tta_reinfer",
+        "human_review"
+      ],
+      "actions": [
+        "diagnose:reinfer",
+        "tta_reinfer",
+        "human_review",
+        "explain"
+      ],
+      "reviewed": true,
+      "review": {
+        "decision": "approve",
+        "notes": "demo approved",
+        "approved_ids": [
+          "F0001",
+          "F0002",
+          "F0003"
+        ],
+        "rejected_ids": []
+      },
+      "resume_code": "graph.invoke(\n    Command(resume={\n        \"decision\": \"approve\",\n        \"notes\": \"demo approved\",\n    }),\n    config={\"configurable\": {\"thread_id\": \"20261025_112515_535923_DEMO_B\"}},\n)",
+      "metrics": {
+        "findings": 3,
+        "area_m2": 175.79,
+        "confidence": 0.9435,
+        "level": "high",
+        "gate": "通过",
+        "actions": 4,
+        "reviewed": true
+      },
+      "findings": [
+        {
+          "area_m2": 135.1,
+          "area_px": 13510,
+          "mean_prob": 0.921,
+          "max_prob": 0.9801,
+          "low_conf_pixel_ratio": 0.0195,
+          "confidence_level": "high",
+          "centroid": [
+            36.236,
+            -4.702
+          ],
+          "bbox": [
+            25.0,
+            -12.3,
+            44.8,
+            0.0
+          ],
+          "pixel_bbox": [
+            250,
+            0,
+            198,
+            123
+          ],
+          "flags": [],
+          "review_status": "pending",
+          "id": "F0001",
+          "rank": 1
+        },
+        {
+          "area_m2": 24.29,
+          "area_px": 2429,
+          "mean_prob": 0.6414,
+          "max_prob": 0.7906,
+          "low_conf_pixel_ratio": 0.5364,
+          "confidence_level": "low",
+          "centroid": [
+            77.726,
+            -33.741
+          ],
+          "bbox": [
+            73.9,
+            -37.5,
+            81.9,
+            -30.4
+          ],
+          "pixel_bbox": [
+            739,
+            304,
+            80,
+            71
+          ],
+          "flags": [
+            "low_confidence",
+            "ambiguous_boundary"
+          ],
+          "review_status": "pending",
+          "id": "F0002",
+          "rank": 2
+        },
+        {
+          "area_m2": 16.4,
+          "area_px": 1640,
+          "mean_prob": 0.6669,
+          "max_prob": 0.8909,
+          "low_conf_pixel_ratio": 0.5116,
+          "confidence_level": "medium",
+          "centroid": [
+            4.864,
+            -100.892
+          ],
+          "bbox": [
+            0.2,
+            -102.4,
+            8.0,
+            -98.8
+          ],
+          "pixel_bbox": [
+            2,
+            988,
+            78,
+            36
+          ],
+          "flags": [
+            "low_confidence",
+            "ambiguous_boundary"
+          ],
+          "review_status": "pending",
+          "id": "F0003",
+          "rank": 3
+        }
+      ],
+      "images": {
+        "t1": "assets/scene2/t1.jpg",
+        "t2": "assets/scene2/t2.jpg",
+        "prob": "assets/scene2/prob.png",
+        "prob_overlay": "assets/scene2/prob_overlay.jpg",
+        "mask": "assets/scene2/mask.png",
+        "mask_overlay": "assets/scene2/mask_overlay.jpg",
+        "overview": "assets/scene2/overview.png",
+        "crops": [
+          "assets/scene2/crops/01_F0001.png",
+          "assets/scene2/crops/02_F0002.png",
+          "assets/scene2/crops/03_F0003.png"
+        ]
+      },
+      "audit": [
+        {
+          "node": "supervisor",
+          "ts": "2026-10-25T11:25:15",
+          "detail": "{\"route\": \"investigation\", \"reason\": \"尚未完成调查，进入调查子图\", \"router\": \"rules\", \"rounds\": 0}"
+        },
+        {
+          "node": "plan",
+          "ts": "2026-10-25T11:25:15",
+          "detail": "{\"query\": \"分析演示区B 2023年Q2的影像，找出新增建筑\", \"scene_id\": \"DEMO_B\", \"period\": \"2023-05-20\", \"reason\": \"exact scene_id\", \"params\": {\"threshold\": 0.5, \"min_area_px\": 500, \"morph_kernel\": 3, \"tile_size\": 512, \"overlap\": 64, \"batch_size\": 1, \"tta\": false, \"tta_flips\": \"hv\"}}"
+        },
+        {
+          "node": "prepare",
+          "ts": "2026-10-25T11:25:15",
+          "detail": "{\"checks\": [\"T1=1024x1024, 3 bands, CRS=EPSG:32650\", \"T2=1024x1024, 3 bands, CRS=EPSG:32650\", \"grid_equal=True\"], \"warnings\": []}"
+        },
+        {
+          "node": "infer",
+          "ts": "2026-10-25T11:25:21",
+          "detail": "{\"backend\": \"bit\", \"model_version\": \"best_ckpt.pt:63777789:1691640682\", \"runtime_s\": 5.959, \"stats\": {\"pixels\": 1048576, \"changed_pixels\": 19937, \"coverage\": 0.019013, \"pixel_confidence\": 0.9881, \"changed_pixel_confidence\": 0.8354, \"ambiguous_ratio\": 0.0072, \"mean_entropy\": 0.0554, \"prob_p50\": 0.0011, \"prob_p90\": 0.0144, \"prob_p99\": 0.9022}, \"params\": {\"threshold\": 0.5, \"min_area_px\": 500, \"morph_kernel\": 3, \"tile_size\": 512, \"overlap\": 64, \"batch_size\": 1, \"tta\": false, \"tta_flips\": \"hv\"}}"
+        },
+        {
+          "node": "postprocess",
+          "ts": "2026-10-25T11:25:21",
+          "detail": "{\"count\": 4, \"total_area_m2\": 191.95, \"mask_stats\": {\"raw_components\": 11, \"kept_components\": 4, \"threshold\": 0.5, \"min_area_px\": 500, \"morph_kernel\": 3, \"mask_pixels\": 19195}}"
+        },
+        {
+          "node": "assess",
+          "ts": "2026-10-25T11:25:21",
+          "detail": "{\"overall\": 0.9123, \"level\": \"high\", \"reasons\": [\"fragmented_findings\", \"many_tiny_findings\", \"low_confidence_objects\"], \"recommended_actions\": [\"parameter_sweep\", \"tta_reinfer\", \"human_review\"]}"
+        },
+        {
+          "node": "supervisor",
+          "ts": "2026-10-25T11:25:21",
+          "detail": "{\"route\": \"enhancement\", \"reason\": \"质量门控未通过: fragmented_findings, many_tiny_findings, low_confidence_objects (round 1/2)\", \"router\": \"rules\", \"rounds\": 1}"
+        },
+        {
+          "node": "enhance.diagnose",
+          "ts": "2026-10-25T11:25:21",
+          "detail": "{\"reasons\": [\"fragmented_findings\", \"many_tiny_findings\", \"low_confidence_objects\"], \"action\": \"reinfer\", \"why\": \"置信度/模糊度高，使用 TTA 重新推理\", \"round\": 1, \"review_possible\": true, \"reinfer_possible\": true, \"sweep_possible\": true}"
+        },
+        {
+          "node": "enhance.reinfer",
+          "ts": "2026-10-25T11:25:23",
+          "detail": "{\"runtime_s\": 1.823, \"stability\": 0.9886, \"stats\": {\"pixels\": 1048576, \"changed_pixels\": 17786, \"coverage\": 0.016962, \"pixel_confidence\": 0.9877, \"changed_pixel_confidence\": 0.8547, \"ambiguous_ratio\": 0.0064, \"mean_entropy\": 0.0586, \"prob_p50\": 0.0012, \"prob_p90\": 0.0165, \"prob_p99\": 0.9144}, \"count\": 3}"
+        },
+        {
+          "node": "enhance.reassess",
+          "ts": "2026-10-25T11:25:23",
+          "detail": "{\"overall\": 0.9435, \"level\": \"high\", \"reasons\": [\"fragmented_findings\", \"many_tiny_findings\", \"low_confidence_objects\"]}"
+        },
+        {
+          "node": "enhance.review",
+          "ts": "2026-10-25T11:25:23",
+          "detail": "{\"decision\": \"approve\", \"approved\": [\"F0001\", \"F0002\", \"F0003\"], \"rejected\": []}"
+        },
+        {
+          "node": "enhance.explain",
+          "ts": "2026-10-25T11:25:24",
+          "detail": "{\"report\": \"demo/outputs/case_b/20261025_112515_535923_DEMO_B/report.md\"}"
+        },
+        {
+          "node": "supervisor",
+          "ts": "2026-10-25T11:25:24",
+          "detail": "{\"route\": \"finish\", \"reason\": \"调查结果通过质量门控\", \"router\": \"rules\", \"rounds\": 1}"
+        }
+      ],
+      "inference": {
+        "backend": "bit",
+        "model_version": "best_ckpt.pt:63777789:1691640682",
+        "runtime_s": 1.823,
+        "stability": 0.9886,
+        "stats": {
+          "pixels": 1048576,
+          "changed_pixels": 17786,
+          "coverage": 0.016962,
+          "pixel_confidence": 0.9877,
+          "changed_pixel_confidence": 0.8547,
+          "ambiguous_ratio": 0.0064,
+          "mean_entropy": 0.0586,
+          "prob_p50": 0.0012,
+          "prob_p90": 0.0165,
+          "prob_p99": 0.9144
+        }
+      },
+      "report_html": "<h1>“两违”影像变化检测报告</h1>\n<ul>\n<li>生成时间：2026-10-25T11:25:25</li>\n<li>任务：分析演示区B 2023年Q2的影像，找出新增建筑</li>\n<li>场景：演示区 B 低置信案例</li>\n<li>周期：2023-05-20</li>\n<li>模型：bit / best_ckpt.pt:63777789:1691640682</li>\n<li>状态：done</li>\n</ul>\n<h2>1. 结论摘要</h2>\n<p>本次分析共提取 <strong>3</strong> 个疑似新增/变化图斑，总面积 <strong>175.79 m²</strong>，整体置信度 <strong>0.944（high）</strong>。</p>\n<p>质量门控触发：<code>fragmented_findings</code>、<code>many_tiny_findings</code>、<code>low_confidence_objects</code>。</p>\n<p>人工复核结论：<strong>approve</strong>；备注：demo approved</p>\n<p>已执行的增强动作：<code>diagnose:reinfer</code>、<code>tta_reinfer</code>、<code>human_review</code>、<code>explain</code></p>\n<h2>2. 置信度与质量</h2>\n<table>\n<thead>\n<tr>\n<th>指标</th>\n<th>值</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>总体置信度</td>\n<td>0.944</td>\n</tr>\n<tr>\n<td>像素级置信度</td>\n<td>0.988</td>\n</tr>\n<tr>\n<td>图斑级置信度</td>\n<td>0.859</td>\n</tr>\n<tr>\n<td>模糊像素占比</td>\n<td>0.006</td>\n</tr>\n<tr>\n<td>变化面积占比</td>\n<td>0.0170</td>\n</tr>\n<tr>\n<td>模型稳定性(TTA)</td>\n<td>0.989</td>\n</tr>\n</tbody>\n</table>\n<h2>3. 疑似图斑（按面积排序，Top 20）</h2>\n<table>\n<thead>\n<tr>\n<th>ID</th>\n<th style=\"text-align: right;\">面积(m²)</th>\n<th style=\"text-align: right;\">平均概率</th>\n<th>置信等级</th>\n<th>中心点</th>\n<th>标记</th>\n<th>复核状态</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>F0001</td>\n<td style=\"text-align: right;\">135.10</td>\n<td style=\"text-align: right;\">0.921</td>\n<td>high</td>\n<td>36.2, -4.7</td>\n<td>-</td>\n<td>approved</td>\n</tr>\n<tr>\n<td>F0002</td>\n<td style=\"text-align: right;\">24.29</td>\n<td style=\"text-align: right;\">0.641</td>\n<td>low</td>\n<td>77.7, -33.7</td>\n<td>low_confidence, ambiguous_boundary</td>\n<td>approved</td>\n</tr>\n<tr>\n<td>F0003</td>\n<td style=\"text-align: right;\">16.40</td>\n<td style=\"text-align: right;\">0.667</td>\n<td>medium</td>\n<td>4.9, -100.9</td>\n<td>low_confidence, ambiguous_boundary</td>\n<td>approved</td>\n</tr>\n</tbody>\n</table>\n<h2>4. 增强与人工复核记录</h2>\n<ul>\n<li>诊断: 置信度/模糊度高，使用 TTA 重新推理；原因=['fragmented_findings', 'many_tiny_findings', 'low_confidence_objects']</li>\n<li>TTA 重新推理: 图斑 3 个，模型稳定性 0.9886，置信度 0.9123 → 待重评</li>\n<li>人工复核: approve; 通过=['F0001', 'F0002', 'F0003']; 驳回=[]; 备注=demo approved</li>\n<li>解释性报告已生成: （演示产物）</li>\n</ul>\n<h2>5. 产物</h2>\n<ul>\n<li>prob_tif: <code>（演示产物）</code></li>\n<li>mask_tif: <code>（演示产物）</code></li>\n<li>findings_geojson: <code>（演示产物）</code></li>\n<li>findings_csv: <code>（演示产物）</code></li>\n<li>findings_json: <code>（演示产物）</code></li>\n<li>overview: <code>（演示产物）</code></li>\n<li>crop: <code>（演示产物）</code></li>\n<li>crop: <code>（演示产物）</code></li>\n<li>crop: <code>（演示产物）</code></li>\n</ul>\n<h2>6. 方法与限制</h2>\n<p>本报告由变化检测模型 + 质量门控自动生成。模型输出为<strong>疑似变化图斑</strong>，不构成违法认定或执法依据；应结合审批数据、用地红线、历史影像和实地核查复核。</p>\n<p>主要误差来源：季节性/光照差异、配准误差、阴影与道路改造、影像分辨率、训练区域与目标区域的地物分布差异。低置信图斑建议优先人工复核。</p>",
+      "assets": {
+        "report_md": "assets/scene2/report.md",
+        "report_html": "assets/scene2/report.html",
+        "findings_csv": "assets/scene2/findings.csv",
+        "findings_geojson": "assets/scene2/findings.geojson",
+        "final_answer": "assets/scene2/final_answer.md"
+      }
+    },
+    {
+      "id": "DEMO_C",
+      "slug": "scene3",
+      "label": "场景三",
+      "title": "干净单目标 · 模型效果",
+      "short": "1 个图斑，约 376 m²，置信度 high，无质量门控告警",
+      "run_id": "20261025_112311_371f17_DEMO_C",
+      "status": "done",
+      "route_history": [
+        "investigation",
+        "finish"
+      ],
+      "reasons": [],
+      "recommended_actions": [],
+      "actions": [],
+      "reviewed": false,
+      "review": null,
+      "resume_code": "",
+      "metrics": {
+        "findings": 1,
+        "area_m2": 376.36,
+        "confidence": 0.8758,
+        "level": "high",
+        "gate": "通过",
+        "actions": 0,
+        "reviewed": false
+      },
+      "findings": [
+        {
+          "area_m2": 376.36,
+          "area_px": 37636,
+          "mean_prob": 0.7636,
+          "max_prob": 0.9973,
+          "low_conf_pixel_ratio": 0.2603,
+          "confidence_level": "medium",
+          "centroid": [
+            51.918,
+            -53.173
+          ],
+          "bbox": [
+            35.6,
+            -60.9,
+            67.5,
+            -43.8
+          ],
+          "pixel_bbox": [
+            356,
+            438,
+            319,
+            171
+          ],
+          "flags": [],
+          "review_status": "pending",
+          "id": "F0001",
+          "rank": 1
+        }
+      ],
+      "images": {
+        "t1": "assets/scene3/t1.jpg",
+        "t2": "assets/scene3/t2.jpg",
+        "prob": "assets/scene3/prob.png",
+        "prob_overlay": "assets/scene3/prob_overlay.jpg",
+        "mask": "assets/scene3/mask.png",
+        "mask_overlay": "assets/scene3/mask_overlay.jpg",
+        "crops": []
+      },
+      "audit": [
+        {
+          "node": "supervisor",
+          "ts": "2026-10-25T11:23:11",
+          "detail": "{\"route\": \"investigation\", \"reason\": \"尚未完成调查，进入调查子图\", \"router\": \"rules\", \"rounds\": 0}"
+        },
+        {
+          "node": "plan",
+          "ts": "2026-10-25T11:23:11",
+          "detail": "{\"query\": \"分析演示区C 2023年Q2的影像，找出新增建筑\", \"scene_id\": \"DEMO_C\", \"period\": \"2023-05-20\", \"reason\": \"exact scene_id\", \"params\": {\"threshold\": 0.5, \"min_area_px\": 5000, \"morph_kernel\": 3, \"tile_size\": 512, \"overlap\": 64, \"batch_size\": 1, \"tta\": false, \"tta_flips\": \"hv\"}}"
+        },
+        {
+          "node": "prepare",
+          "ts": "2026-10-25T11:23:11",
+          "detail": "{\"checks\": [\"T1=1024x1024, 3 bands, CRS=EPSG:32650\", \"T2=1024x1024, 3 bands, CRS=EPSG:32650\", \"grid_equal=True\"], \"warnings\": []}"
+        },
+        {
+          "node": "infer",
+          "ts": "2026-10-25T11:23:17",
+          "detail": "{\"backend\": \"bit\", \"model_version\": \"best_ckpt.pt:63777789:1691640682\", \"runtime_s\": 5.915, \"stats\": {\"pixels\": 1048576, \"changed_pixels\": 39562, \"coverage\": 0.037729, \"pixel_confidence\": 0.9746, \"changed_pixel_confidence\": 0.754, \"ambiguous_ratio\": 0.0218, \"mean_entropy\": 0.1027, \"prob_p50\": 0.003, \"prob_p90\": 0.0455, \"prob_p99\": 0.8746}, \"params\": {\"threshold\": 0.5, \"min_area_px\": 5000, \"morph_kernel\": 3, \"tile_size\": 512, \"overlap\": 64, \"batch_size\": 1, \"tta\": false, \"tta_flips\": \"hv\"}}"
+        },
+        {
+          "node": "postprocess",
+          "ts": "2026-10-25T11:23:17",
+          "detail": "{\"count\": 1, \"total_area_m2\": 376.36, \"mask_stats\": {\"raw_components\": 10, \"kept_components\": 1, \"threshold\": 0.5, \"min_area_px\": 5000, \"morph_kernel\": 3, \"mask_pixels\": 37636}}"
+        },
+        {
+          "node": "assess",
+          "ts": "2026-10-25T11:23:17",
+          "detail": "{\"overall\": 0.8758, \"level\": \"high\", \"reasons\": [], \"recommended_actions\": []}"
+        },
+        {
+          "node": "supervisor",
+          "ts": "2026-10-25T11:23:17",
+          "detail": "{\"route\": \"finish\", \"reason\": \"调查结果通过质量门控\", \"router\": \"rules\", \"rounds\": 0}"
+        }
+      ],
+      "inference": {
+        "backend": "bit",
+        "model_version": "best_ckpt.pt:63777789:1691640682",
+        "runtime_s": 5.915,
+        "stability": 0.72,
+        "stats": {
+          "pixels": 1048576,
+          "changed_pixels": 39562,
+          "coverage": 0.037729,
+          "pixel_confidence": 0.9746,
+          "changed_pixel_confidence": 0.754,
+          "ambiguous_ratio": 0.0218,
+          "mean_entropy": 0.1027,
+          "prob_p50": 0.003,
+          "prob_p90": 0.0455,
+          "prob_p99": 0.8746
+        }
+      },
+      "report_html": "<h1>“两违”影像变化检测报告</h1>\n<ul>\n<li>生成时间：2026-10-25T11:23:18</li>\n<li>任务：分析演示区C 2023年Q2的影像，找出新增建筑</li>\n<li>场景：演示区 C 单栋新增建筑</li>\n<li>周期：2023-05-20</li>\n<li>模型：bit / best_ckpt.pt:63777789:1691640682</li>\n<li>状态：done</li>\n</ul>\n<h2>1. 结论摘要</h2>\n<p>本次分析共提取 <strong>1</strong> 个疑似新增/变化图斑，总面积 <strong>376.36 m²</strong>，整体置信度 <strong>0.876（high）</strong>。</p>\n<h2>2. 置信度与质量</h2>\n<table>\n<thead>\n<tr>\n<th>指标</th>\n<th>值</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>总体置信度</td>\n<td>0.876</td>\n</tr>\n<tr>\n<td>像素级置信度</td>\n<td>0.975</td>\n</tr>\n<tr>\n<td>图斑级置信度</td>\n<td>0.764</td>\n</tr>\n<tr>\n<td>模糊像素占比</td>\n<td>0.022</td>\n</tr>\n<tr>\n<td>变化面积占比</td>\n<td>0.0377</td>\n</tr>\n<tr>\n<td>模型稳定性(TTA)</td>\n<td>0.720</td>\n</tr>\n</tbody>\n</table>\n<h2>3. 疑似图斑（按面积排序，Top 20）</h2>\n<table>\n<thead>\n<tr>\n<th>ID</th>\n<th style=\"text-align: right;\">面积(m²)</th>\n<th style=\"text-align: right;\">平均概率</th>\n<th>置信等级</th>\n<th>中心点</th>\n<th>标记</th>\n<th>复核状态</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>F0001</td>\n<td style=\"text-align: right;\">376.36</td>\n<td style=\"text-align: right;\">0.764</td>\n<td>medium</td>\n<td>51.9, -53.2</td>\n<td>-</td>\n<td>pending</td>\n</tr>\n</tbody>\n</table>\n<h2>4. 增强与人工复核记录</h2>\n<ul>\n<li>本次未触发增强流程。</li>\n</ul>\n<h2>5. 产物</h2>\n<ul>\n<li>prob_tif: <code>（演示产物）</code></li>\n<li>mask_tif: <code>（演示产物）</code></li>\n<li>findings_geojson: <code>（演示产物）</code></li>\n<li>findings_csv: <code>（演示产物）</code></li>\n<li>findings_json: <code>（演示产物）</code></li>\n<li>overview: <code>（演示产物）</code></li>\n<li>crop: <code>（演示产物）</code></li>\n</ul>\n<h2>6. 方法与限制</h2>\n<p>本报告由变化检测模型 + 质量门控自动生成。模型输出为<strong>疑似变化图斑</strong>，不构成违法认定或执法依据；应结合审批数据、用地红线、历史影像和实地核查复核。</p>\n<p>主要误差来源：季节性/光照差异、配准误差、阴影与道路改造、影像分辨率、训练区域与目标区域的地物分布差异。低置信图斑建议优先人工复核。</p>",
+      "assets": {
+        "report_md": "assets/scene3/report.md",
+        "report_html": "assets/scene3/report.html",
+        "findings_csv": "assets/scene3/findings.csv",
+        "findings_geojson": "assets/scene3/findings.geojson",
+        "final_answer": "assets/scene3/final_answer.md"
+      }
+    }
+  ],
+  "framework": {
+    "code": {
+      "state": "class AgentState(TypedDict):\n    # Conversation / request\n    messages: Annotated[list, add_messages]\n    query: NotRequired[str]\n    request: NotRequired[Dict[str, Any]]\n\n    # Execution context\n    run_id: NotRequired[str]\n    workspace: NotRequired[str]\n    status: NotRequired[str]\n    scene: NotRequired[Dict[str, Any]]\n    params: NotRequired[Dict[str, Any]]\n\n    # Investigation result\n    investigation: NotRequired[Dict[str, Any]]\n    inference: NotRequired[Dict[str, Any]]\n    findings: NotRequired[List[Dict[str, Any]]]\n    confidence: NotRequired[Dict[str, Any]]\n    assessment: NotRequired[Dict[str, Any]]\n    artifacts: NotRequired[Dict[str, Any]]\n\n    # Enhancement result\n    enhancement: NotRequired[Dict[str, Any]]\n    enhancement_rounds: NotRequired[int]\n    reviewed: NotRequired[bool]\n    review_decision: NotRequired[Dict[str, Any]]\n    route: NotRequired[str]\n\n    # Output\n    final_answer: NotRequired[str]\n    error: NotRequired[Optional[str]]\n\n    # Observability\n    audit: Annotated[List[Dict[str, Any]], merge_audit]\n    route_history: List[str]\n",
+      "graph": "def build_graph(runtime: Any, checkpointer: Optional[Any] = None):\n    \"\"\"Compile the top-level graph.\n\n    A checkpointer is required for human-in-the-loop ``interrupt`` calls.  The\n    default in-memory saver is fine for a demo; production should use\n    ``SqliteSaver``/Postgres so reviews survive process restarts.\n    \"\"\"\n    builder = StateGraph(AgentState)\n    builder.add_node(\"supervisor\", lambda s: to_python(supervisor_node(s, runtime)))\n    builder.add_node(\"investigation_workflow\", build_investigation_graph(runtime))\n    builder.add_node(\"enhancement_workflow\", build_enhancement_graph(runtime))\n    builder.add_node(\"finish\", lambda s: to_python(finish_node(s, runtime)))\n\n    builder.add_edge(START, \"supervisor\")\n    builder.add_conditional_edges(\n        \"supervisor\",\n        lambda s: s.get(\"route\", \"finish\"),\n        {\n            \"investigation\": \"investigation_workflow\",\n            \"enhancement\": \"enhancement_workflow\",\n            \"finish\": \"finish\",\n        },\n    )\n    builder.add_edge(\"investigation_workflow\", \"supervisor\")\n    builder.add_edge(\"enhancement_workflow\", \"supervisor\")\n    builder.add_edge(\"finish\", END)\n\n    return builder.compile(checkpointer=checkpointer or MemorySaver())\n",
+      "investigation": "def build_investigation_graph(runtime: Any):\n    def node(fn):\n        return lambda s: to_python(fn(s, runtime))\n\n    builder = StateGraph(AgentState)\n    builder.add_node(\"plan\", node(plan_node))\n    builder.add_node(\"prepare\", node(prepare_node))\n    builder.add_node(\"infer\", node(infer_node))\n    builder.add_node(\"postprocess\", node(postprocess_node))\n    builder.add_node(\"assess\", node(assess_node))\n    builder.add_node(\"abort\", node(abort_node))\n\n    builder.add_edge(START, \"plan\")\n    builder.add_conditional_edges(\n        \"plan\",\n        lambda s: \"abort\" if s.get(\"status\") == \"needs_clarification\" else \"prepare\",\n        {\"abort\": \"abort\", \"prepare\": \"prepare\"},\n    )\n    builder.add_conditional_edges(\n        \"prepare\",\n        lambda s: \"abort\" if s.get(\"status\") == \"error\" else \"infer\",\n        {\"abort\": \"abort\", \"infer\": \"infer\"},\n    )\n    builder.add_conditional_edges(\n        \"infer\",\n        lambda s: \"abort\" if s.get(\"status\") == \"error\" else \"postprocess\",\n        {\"abort\": \"abort\", \"postprocess\": \"postprocess\"},\n    )\n    builder.add_conditional_edges(\n        \"postprocess\",\n        lambda s: \"abort\" if s.get(\"status\") == \"error\" else \"assess\",\n        {\"abort\": \"abort\", \"assess\": \"assess\"},\n    )\n    builder.add_edge(\"assess\", END)\n    builder.add_edge(\"abort\", END)\n    return builder.compile()\n",
+      "enhancement": "def build_enhancement_graph(runtime: Any):\n    def node(fn):\n        return lambda s: to_python(fn(s, runtime))\n\n    builder = StateGraph(AgentState)\n    builder.add_node(\"diagnose\", node(diagnose_node))\n    builder.add_node(\"sweep\", node(sweep_node))\n    builder.add_node(\"reinfer\", node(reinfer_node))\n    builder.add_node(\"reassess\", node(reassess_node))\n    builder.add_node(\"review\", node(review_node))\n    builder.add_node(\"explain\", node(explain_node))\n\n    builder.add_edge(START, \"diagnose\")\n    builder.add_conditional_edges(\n        \"diagnose\",\n        lambda s: (s.get(\"enhancement\") or {}).get(\"next_action\", \"explain\"),\n        {\n            \"sweep\": \"sweep\",\n            \"reinfer\": \"reinfer\",\n            \"review\": \"review\",\n            \"explain\": \"explain\",\n        },\n    )\n    builder.add_edge(\"sweep\", \"reassess\")\n    builder.add_edge(\"reinfer\", \"reassess\")\n    builder.add_conditional_edges(\n        \"reassess\",\n        lambda s: _route_after_reassess(s, runtime),\n        {\"reinfer\": \"reinfer\", \"review\": \"review\", \"explain\": \"explain\"},\n    )\n    builder.add_edge(\"review\", \"explain\")\n    builder.add_edge(\"explain\", END)\n    return builder.compile()\n",
+      "review": "def review_node(state: Dict[str, Any], runtime: Any) -> Dict[str, Any]:\n    \"\"\"Human-in-the-loop checkpoint.\n\n    ``interrupt`` pauses the graph; the caller resumes with a dict:\n    ``{\"decision\": \"approve\"|\"reject\"|\"partial\", \"approved_ids\": [...],\n       \"rejected_ids\": [...], \"notes\": \"...\"}``.\n    \"\"\"\n    enh = _enh(state)\n    findings = state.get(\"findings\") or []\n    payload = {\n        \"type\": \"finding_review\",\n        \"question\": \"模型对以下疑似图斑置信度不足，请复核后给出处置意见。\",\n        \"confidence\": state.get(\"confidence\", {}).get(\"overall\"),\n        \"reasons\": (state.get(\"assessment\") or {}).get(\"reasons\", []),\n        \"findings\": [\n            {\n                \"id\": f.get(\"id\"),\n                \"area_m2\": f.get(\"area_m2\"),\n                \"mean_prob\": f.get(\"mean_prob\"),\n                \"confidence_level\": f.get(\"confidence_level\"),\n                \"flags\": f.get(\"flags\"),\n                \"centroid\": f.get(\"centroid\"),\n                \"bbox\": f.get(\"bbox\"),\n            }\n            for f in findings[:10]\n        ],\n        \"resume_schema\": {\n            \"decision\": \"approve | reject | partial\",\n            \"approved_ids\": [\"F0001\"],\n            \"rejected_ids\": [\"F0002\"],\n            \"notes\": \"复核意见\",\n        },\n    }\n    decision = interrupt(payload)\n    if isinstance(decision, str):\n        decision = {\"decision\": decision}\n    if not isinstance(decision, dict):\n        decision = {\"decision\": \"abstain\", \"notes\": str(decision)}\n\n    action = decision.get(\"decision\", \"approve\")\n    approved = set(decision.get(\"approved_ids\") or [])\n    rejected = set(decision.get(\"rejected_ids\") or [])\n    if action == \"approve\" and not approved and not rejected:\n        approved = {f.get(\"id\") for f in findings}\n    if action == \"reject\" and not rejected:\n        rejected = {f.get(\"id\") for f in findings}\n\n    updated = []\n    for f in findings:\n        item = dict(f)\n        fid = item.get(\"id\")\n        if fid in approved:\n            item[\"review_status\"] = \"approved\"\n            item[\"human_confirmed\"] = True\n        elif fid in rejected:\n            item[\"review_status\"] = \"rejected\"\n            item[\"flags\"] = list(dict.fromkeys(list(item.get(\"flags\", [])) + [\"human_rejected\"]))\n        elif action == \"partial\":\n            item[\"review_status\"] = \"pending\"\n        updated.append(item)\n\n    confidence = dict(state.get(\"confidence\") or {})\n    confidence[\"human_review\"] = {\n        \"decision\": action,\n        \"approved_ids\": sorted(approved),\n        \"rejected_ids\": sorted(rejected),\n        \"notes\": decision.get(\"notes\", \"\"),\n    }\n    assessment = dict(state.get(\"assessment\") or {})\n    assessment.update(\n        {\n            \"needs_enhancement\": False,\n            \"human_reviewed\": True,\n            \"review_decision\": decision,\n            \"review_required\": False,\n        }\n    )\n    enh = _remember(\n        enh,\n        \"human_review\",\n        f\"人工复核: {action}; 通过={sorted(approved)}; 驳回={sorted(rejected)}; 备注={decision.get('notes', '')}\",\n    )\n    return {\n        \"findings\": updated,\n        \"confidence\": confidence,\n        \"assessment\": assessment,\n        \"reviewed\": True,\n        \"review_decision\": decision,\n        \"enhancement\": enh,\n        \"status\": \"reviewed\",\n        \"audit\": [\n            _audit(\n                \"enhance.review\",\n                {\n                    \"decision\": action,\n                    \"approved\": sorted(approved),\n                    \"rejected\": sorted(rejected),\n                },\n            )\n        ],\n    }\n"
+    },
+    "mermaid": "---\nconfig:\n  flowchart:\n    curve: linear\n---\ngraph TD;\n\t__start__([<p>__start__</p>]):::first\n\tsupervisor(supervisor)\n\tinvestigation_workflow(investigation_workflow)\n\tenhancement_workflow(enhancement_workflow)\n\tfinish(finish)\n\t__end__([<p>__end__</p>]):::last\n\t__start__ --> supervisor;\n\tenhancement_workflow --> supervisor;\n\tinvestigation_workflow --> supervisor;\n\tsupervisor -. &nbsp;enhancement&nbsp; .-> enhancement_workflow;\n\tsupervisor -.-> finish;\n\tsupervisor -. &nbsp;investigation&nbsp; .-> investigation_workflow;\n\tfinish --> __end__;\n\tsupervisor -.-> __end__;\n\tclassDef default fill:#f2f0ff,line-height:1.2\n\tclassDef first fill-opacity:0\n\tclassDef last fill:#bfb6fc\n",
+    "capabilities": [
+      [
+        "StateGraph",
+        "AgentState + 节点返回值合并",
+        "跨工作流共享状态"
+      ],
+      [
+        "add_conditional_edges",
+        "Supervisor 路由",
+        "按质量门控动态选择调查/增强/结束"
+      ],
+      [
+        "Subgraph",
+        "investigation / enhancement",
+        "隔离复杂流程，单独演进"
+      ],
+      [
+        "interrupt",
+        "review_node",
+        "人工复核时暂停图"
+      ],
+      [
+        "Command(resume)",
+        "CLI / UI 审核提交",
+        "从暂停点继续执行"
+      ],
+      [
+        "Checkpointer",
+        "MemorySaver（Demo）",
+        "按 thread_id 保存状态"
+      ],
+      [
+        "recursion_limit",
+        "CLI config",
+        "防止增强循环失控"
+      ],
+      [
+        "自定义 reducer",
+        "audit 去重",
+        "保留可追溯的审计轨迹"
+      ]
+    ]
+  }
+}

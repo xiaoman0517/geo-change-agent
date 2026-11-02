@@ -1,0 +1,10 @@
+﻿id,area_m2,area_px,mean_prob,max_prob,confidence_level,centroid_x,centroid_y,flags,review_status
+F0001,134.63,13463,0.661,0.8626,medium,198.581,-118.129,low_confidence|ambiguous_boundary,pending
+F0002,128.59,12859,0.9094,0.9806,high,7.952,-138.282,,pending
+F0003,125.64,12564,0.921,0.9892,high,198.78,-156.507,,pending
+F0004,105.39,10539,0.7692,0.9688,medium,128.819,-192.628,,pending
+F0005,103.2,10320,0.9177,0.993,high,201.146,-18.801,,pending
+F0006,83.66,8366,0.8738,0.9572,high,68.708,-166.951,,pending
+F0007,48.87,4887,0.7556,0.8868,medium,62.296,-120.528,,pending
+F0008,41.3,4130,0.7974,0.9148,medium,27.183,-165.155,,pending
+F0009,27.73,2773,0.8444,0.9317,high,93.562,-106.541,small_object,pending

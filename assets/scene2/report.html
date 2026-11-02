@@ -1,0 +1,114 @@
+<h1>“两违”影像变化检测报告</h1>
+<ul>
+<li>生成时间：2026-10-25T11:25:25</li>
+<li>任务：分析演示区B 2023年Q2的影像，找出新增建筑</li>
+<li>场景：演示区 B 低置信案例</li>
+<li>周期：2023-05-20</li>
+<li>模型：bit / best_ckpt.pt:63777789:1691640682</li>
+<li>状态：done</li>
+</ul>
+<h2>1. 结论摘要</h2>
+<p>本次分析共提取 <strong>3</strong> 个疑似新增/变化图斑，总面积 <strong>175.79 m²</strong>，整体置信度 <strong>0.944（high）</strong>。</p>
+<p>质量门控触发：<code>fragmented_findings</code>、<code>many_tiny_findings</code>、<code>low_confidence_objects</code>。</p>
+<p>人工复核结论：<strong>approve</strong>；备注：demo approved</p>
+<p>已执行的增强动作：<code>diagnose:reinfer</code>、<code>tta_reinfer</code>、<code>human_review</code>、<code>explain</code></p>
+<h2>2. 置信度与质量</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>总体置信度</td>
+<td>0.944</td>
+</tr>
+<tr>
+<td>像素级置信度</td>
+<td>0.988</td>
+</tr>
+<tr>
+<td>图斑级置信度</td>
+<td>0.859</td>
+</tr>
+<tr>
+<td>模糊像素占比</td>
+<td>0.006</td>
+</tr>
+<tr>
+<td>变化面积占比</td>
+<td>0.0170</td>
+</tr>
+<tr>
+<td>模型稳定性(TTA)</td>
+<td>0.989</td>
+</tr>
+</tbody>
+</table>
+<h2>3. 疑似图斑（按面积排序，Top 20）</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th style="text-align: right;">面积(m²)</th>
+<th style="text-align: right;">平均概率</th>
+<th>置信等级</th>
+<th>中心点</th>
+<th>标记</th>
+<th>复核状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F0001</td>
+<td style="text-align: right;">135.10</td>
+<td style="text-align: right;">0.921</td>
+<td>high</td>
+<td>36.2, -4.7</td>
+<td>-</td>
+<td>approved</td>
+</tr>
+<tr>
+<td>F0002</td>
+<td style="text-align: right;">24.29</td>
+<td style="text-align: right;">0.641</td>
+<td>low</td>
+<td>77.7, -33.7</td>
+<td>low_confidence, ambiguous_boundary</td>
+<td>approved</td>
+</tr>
+<tr>
+<td>F0003</td>
+<td style="text-align: right;">16.40</td>
+<td style="text-align: right;">0.667</td>
+<td>medium</td>
+<td>4.9, -100.9</td>
+<td>low_confidence, ambiguous_boundary</td>
+<td>approved</td>
+</tr>
+</tbody>
+</table>
+<h2>4. 增强与人工复核记录</h2>
+<ul>
+<li>诊断: 置信度/模糊度高，使用 TTA 重新推理；原因=['fragmented_findings', 'many_tiny_findings', 'low_confidence_objects']</li>
+<li>TTA 重新推理: 图斑 3 个，模型稳定性 0.9886，置信度 0.9123 → 待重评</li>
+<li>人工复核: approve; 通过=['F0001', 'F0002', 'F0003']; 驳回=[]; 备注=demo approved</li>
+<li>解释性报告已生成: （演示产物）</li>
+</ul>
+<h2>5. 产物</h2>
+<ul>
+<li>prob_tif: <code>（演示产物）</code></li>
+<li>mask_tif: <code>（演示产物）</code></li>
+<li>findings_geojson: <code>（演示产物）</code></li>
+<li>findings_csv: <code>（演示产物）</code></li>
+<li>findings_json: <code>（演示产物）</code></li>
+<li>overview: <code>（演示产物）</code></li>
+<li>crop: <code>（演示产物）</code></li>
+<li>crop: <code>（演示产物）</code></li>
+<li>crop: <code>（演示产物）</code></li>
+</ul>
+<h2>6. 方法与限制</h2>
+<p>本报告由变化检测模型 + 质量门控自动生成。模型输出为<strong>疑似变化图斑</strong>，不构成违法认定或执法依据；应结合审批数据、用地红线、历史影像和实地核查复核。</p>
+<p>主要误差来源：季节性/光照差异、配准误差、阴影与道路改造、影像分辨率、训练区域与目标区域的地物分布差异。低置信图斑建议优先人工复核。</p>

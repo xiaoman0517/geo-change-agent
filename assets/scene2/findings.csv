@@ -1,0 +1,4 @@
+﻿id,area_m2,area_px,mean_prob,max_prob,confidence_level,centroid_x,centroid_y,flags,review_status
+F0001,135.1,13510,0.921,0.9801,high,36.236,-4.702,,pending
+F0002,24.29,2429,0.6414,0.7906,low,77.726,-33.741,low_confidence|ambiguous_boundary,pending
+F0003,16.4,1640,0.6669,0.8909,medium,4.864,-100.892,low_confidence|ambiguous_boundary,pending

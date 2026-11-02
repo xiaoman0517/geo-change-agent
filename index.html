@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>两违影像分析 Agent · LangGraph Demo</title>
+  <meta name="description" content="LangGraph Supervisor + 调查/增强双工作流 + 人工复核的遥感变化检测 Demo" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="kicker">LangGraph · Remote Sensing Agent</div>
+      <h1>两违影像分析 Agent</h1>
+      <p>Supervisor 路由 · Investigation / Enhancement 双工作流 · 质量门控 · Human-in-the-loop</p>
+      <div class="badges">
+        <span>BIT 变化检测</span>
+        <span>StateGraph</span>
+        <span>Subgraphs</span>
+        <span>interrupt / resume</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-kicker">场景选择</div>
+      <div id="scene-list" class="scene-list"></div>
+      <div class="sidebar-note">
+        <b>这个 Demo 展示什么</b>
+        <ul>
+          <li>真实 BIT 变化检测结果</li>
+          <li>Supervisor 条件路由</li>
+          <li>调查 / 增强两个子图</li>
+          <li>质量门控与增强动作</li>
+          <li>人工复核 interrupt/resume</li>
+          <li>可审计的状态流转</li>
+        </ul>
+        <p>小范围脱敏裁剪，坐标已偏移。</p>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div id="scene-header"></div>
+      <div id="metrics" class="metrics"></div>
+      <nav id="tabs" class="tabs" aria-label="内容切换"></nav>
+      <div id="tab-content" class="tab-content">
+        <div class="loading">正在加载 Demo 数据…</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    模型结果为疑似图斑，不构成违法认定或执法依据。Demo 数据为小范围脱敏裁剪。
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
